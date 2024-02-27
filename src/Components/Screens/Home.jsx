@@ -1,6 +1,8 @@
 import React from "react";
 import Lottie from "lottie-react";
 import scam from "../../assets/Lottie/scam.json";
+import Typewriter from "typewriter-effect";
+
 export default function Home() {
   return (
     <>
@@ -9,14 +11,21 @@ export default function Home() {
           <Navbar />
         </div>
         <div className="h-full w-full flex justify-center items-end bg-home bg-no-repeat bg-cover bg-end shadow-md m:bg-center bg-fixed">
-
           <img className="p-12" src="/arrow.png" alt="" />
         </div>
       </div>
 
       <div className="h-screen w-full bg-[#120E05] flex flex-col justify-center items-center space-y-8 text-center">
         <div className="text-6xl w-full text-white opacity-45 tracking-wider">
-          Welcome to Our Fraud Detection <br /> System Protocol
+          {/* Welcome to Our Fraud Detection <br /> System Protocol */}
+
+          <Typewriter
+            options={{
+              strings: ["Welcome to Our Fraud Detection"],
+              autoStart: true,
+              loop: true,
+            }}
+          />
         </div>
       </div>
       <div className="h-screen w-full bg-[#120E05] flex justify-center items-center text-center">
