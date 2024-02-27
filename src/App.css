@@ -1,0 +1,6 @@
+.full-screen-image {
+    height: 100vh; /* Full height of the viewport */
+    width: 100%; /* Full width of the container */
+    object-fit: cover; /* Maintain aspect ratio and cover entire container */
+    filter: brightness(70%); /* Decrease brightness by 30% to make it darker */
+  }
