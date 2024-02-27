@@ -25,6 +25,7 @@ export default function Home() {
               autoStart: true,
               loop: true,
             }}
+            
           />
         </div>
       </div>
