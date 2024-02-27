@@ -1,4 +1,3 @@
-import React from 'react';
 
 export default function Login() {
   return (
@@ -42,7 +41,7 @@ export default function Login() {
           </button>
 
           <div className="flex justify-center items-center">
-            <p className="text-sm text-gray-700 mx-1">Don't have an account?</p>
+            <p className="text-sm text-gray-700 mx-1">Dont have an account?</p>
             <a href="/signup" className="hover:opacity-90">Sign up</a>
           </div>
         </div>
