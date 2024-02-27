@@ -14,7 +14,7 @@ export default function Login() {
           />
           <input
             className="w-full mb-6 placeholder-dark border-2 border-dark rounded-md py-3 px-4"
-            placeholder="Enter your password"
+            placeholder="password"
             type="password"
           />
 
