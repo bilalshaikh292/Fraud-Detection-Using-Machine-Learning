@@ -1,0 +1,88 @@
+import React from "react";
+
+const Navbar = () => {
+  return (
+    <>
+      <div className="flex justify-between items-center font-Onest">
+        <h1 className="text-3xl font-bold">Dashboard</h1>
+
+        <div className="flex justify-between items-center space-x-4 text-md text-gray-600">
+          <a className="hover:text-black hover:text-lg" href="/login">
+            Login
+          </a>
+          <a className="hover:text-black hover:text-lg" href="/signup">
+            Signup
+          </a>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default function Dashboard() {
+  return (
+    <>
+      <div className="flex">
+      {/* Sidebar */}
+        <div className="h-screen w-[20%] hidden bg-gray-300 lg:flex flex-col justify-between">
+          {/* top */}
+          <div className="flex bg-pink-400">
+            <div className="flex">
+                <img src="/wallet.png" alt="" />
+                <h2 className="font-semibold text-3xl">Fraud</h2>
+            </div>
+          </div>
+
+          {/* bottom */}
+          <div className="w-full flex bg-orange-400 justify-center items-center space-x-6 py-8">
+            <img className="h-12 w-12 rounded-full" src="/headshot.jpeg" alt="" srcset="" />
+            <h3 className="text-xl text-gray-700 font-semibold">Ankush Rao</h3>
+          </div>
+        </div>
+
+        {/* main  */}
+
+        <main className="h-screen w-full lg:w-[80%] px-6 py-8 shadow-gray-400 shadow-md">
+          <div className="h-[10%]">
+            <Navbar />
+          </div>
+
+          <div className="flex h-[90%]">
+            <div class="flex items-center justify-center w-full">
+              <label
+                for="dropzone-file"
+                class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-400 border-dashed rounded-lg cursor-pointer bg-gray-700 dark:hover:bg-bray-800 dark:bg-gray-400 hover:bg-gray-600 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600"
+              >
+                <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                  <svg
+                    class="w-8 h-8 mb-4 text-gray-300 dark:text-gray-800"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 20 16"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
+                    />
+                  </svg>
+                  <p class="mb-2 text-sm text-gray-200 dark:text-gray-400">
+                    <span class="font-semibold">Click to upload</span> or drag
+                    and drop
+                  </p>
+                  <p class="text-xs text-gray-200 dark:text-gray-400">
+                    SVG, PNG, JPG or GIF (MAX. 800x400px)
+                  </p>
+                </div>
+                <input id="dropzone-file" type="file" class="hidden" />
+              </label>
+            </div>
+          </div>
+        </main>
+      </div>
+    </>
+  );
+}
