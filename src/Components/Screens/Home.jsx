@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center font-Onest p-6">
         <h1 className="text-5xl font-bold text-white border-b-2 border-white">Fraud <br /> Detection</h1>
 
-        <div className="flex justify-between items-center space-x-4 text-lg text-white self-start">
+        <div className="flex flex-col md:flex-row justify-between items-center md:space-x-4 text-lg text-white self-start ">
           <a className="text-white " href="/login">
             Login
           </a>

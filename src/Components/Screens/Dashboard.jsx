@@ -27,9 +27,9 @@ export default function Dashboard() {
       {/* Sidebar */}
         <div className="h-screen w-[20%] hidden bg-gray-100 lg:flex flex-col justify-between">
           {/* top */}
-          <div className="flex flex-col p-4 space-y-8">
-            <div className="w-full flex items-center justify-center space-x-3">
-                <img className="h-28 object-cover bg-transparent" src="/credit.png" alt="" />
+          <div className="flex flex-col p-4 space-y-14">
+            <div className="w-full flex items-center justify-center space-x-3 py-4 px-2">
+                <img className="h-20 object-cover bg-transparent rotate-" src="/icon.png" alt="" />
                 <h2 className="font-semibold text-3xl">Fraud Detection</h2>
             </div>
 
@@ -37,7 +37,7 @@ export default function Dashboard() {
               <Link to="/">
                 <div className="flex w-full justify-start items-center space-x-6">
                     <img className="h-5 opacity-60" src="/dashboard.png" alt="" />
-                    <h2 className="text-lg text-gray-700 font-semibold">home</h2>
+                    <h2 className="text-lg text-gray-700 font-semibold">Home</h2>
                 </div>
                 </Link>
                 <div className="flex w-full justify-start items-center space-x-6">
@@ -46,11 +46,11 @@ export default function Dashboard() {
                 </div>
                 <div className="flex w-full justify-start items-center space-x-6">
                     <img className="h-5 opacity-60" src="/dashboard.png" alt="" />
-                    <h2 className="text-lg text-gray-700 font-semibold">Dashboard</h2>
+                    <h2 className="text-lg text-gray-700 font-semibold">Analytics</h2>
                 </div>
                 <div className="flex w-full justify-start items-center space-x-6">
                     <img className="h-5 opacity-60" src="/dashboard.png" alt="" />
-                    <h2 className="text-lg text-gray-700 font-semibold">Dashboard</h2>
+                    <h2 className="text-lg text-gray-700 font-semibold">History</h2>
                 </div>
             </div>
           </div>
