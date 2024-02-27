@@ -9,7 +9,7 @@ export default function Login() {
           <input
             id="email"
             className="w-full mb-5 placeholder-dark border-2 border-dark rounded-md py-3 px-4"
-            placeholder="Enter your email"
+            placeholder="Username"
             type="text"
           />
           <input
