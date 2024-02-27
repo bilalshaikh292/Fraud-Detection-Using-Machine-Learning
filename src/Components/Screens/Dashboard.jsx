@@ -7,12 +7,12 @@ const Navbar = () => {
         <h1 className="text-3xl font-bold">Dashboard</h1>
 
         <div className="flex justify-between items-center space-x-4 text-md text-gray-600">
-          <a className="hover:text-black hover:text-lg" href="/login">
+          {/* <a className="hover:text-black hover:text-lg" href="/login">
             Login
           </a>
           <a className="hover:text-black hover:text-lg" href="/signup">
             Signup
-          </a>
+          </a> */}
         </div>
       </div>
     </>
@@ -22,19 +22,38 @@ const Navbar = () => {
 export default function Dashboard() {
   return (
     <>
-      <div className="flex">
+      <div className="flex font-Onest">
       {/* Sidebar */}
-        <div className="h-screen w-[20%] hidden bg-gray-300 lg:flex flex-col justify-between">
+        <div className="h-screen w-[20%] hidden bg-gray-100 lg:flex flex-col justify-between">
           {/* top */}
-          <div className="flex bg-pink-400">
-            <div className="flex">
-                <img src="/wallet.png" alt="" />
-                <h2 className="font-semibold text-3xl">Fraud</h2>
+          <div className="flex flex-col p-4 space-y-8">
+            <div className="w-full flex items-center justify-center space-x-3">
+                <img className="h-28 object-cover bg-transparent" src="/credit.png" alt="" />
+                <h2 className="font-semibold text-3xl">Fraud Detection</h2>
+            </div>
+
+            <div className="flex flex-col space-y-10 w-full pl-10">
+                <div className="flex w-full justify-start items-center space-x-6">
+                    <img className="h-5 opacity-60" src="/dashboard.png" alt="" />
+                    <h2 className="text-lg text-gray-700 font-semibold">Dashboard</h2>
+                </div>
+                <div className="flex w-full justify-start items-center space-x-6">
+                    <img className="h-5 opacity-60" src="/dashboard.png" alt="" />
+                    <h2 className="text-lg text-gray-700 font-semibold">Dashboard</h2>
+                </div>
+                <div className="flex w-full justify-start items-center space-x-6">
+                    <img className="h-5 opacity-60" src="/dashboard.png" alt="" />
+                    <h2 className="text-lg text-gray-700 font-semibold">Dashboard</h2>
+                </div>
+                <div className="flex w-full justify-start items-center space-x-6">
+                    <img className="h-5 opacity-60" src="/dashboard.png" alt="" />
+                    <h2 className="text-lg text-gray-700 font-semibold">Dashboard</h2>
+                </div>
             </div>
           </div>
 
           {/* bottom */}
-          <div className="w-full flex bg-orange-400 justify-center items-center space-x-6 py-8">
+          <div className="w-full flex justify-center items-center space-x-6 py-8">
             <img className="h-12 w-12 rounded-full" src="/headshot.jpeg" alt="" srcset="" />
             <h3 className="text-xl text-gray-700 font-semibold">Ankush Rao</h3>
           </div>
@@ -42,7 +61,7 @@ export default function Dashboard() {
 
         {/* main  */}
 
-        <main className="h-screen w-full lg:w-[80%] px-6 py-8 shadow-gray-400 shadow-md">
+        <main className="h-screen w-full lg:w-[80%] px-8 py-10 shadow-gray-100 shadow-md">
           <div className="h-[10%]">
             <Navbar />
           </div>
