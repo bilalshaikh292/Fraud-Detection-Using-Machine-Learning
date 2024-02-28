@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 
 export default function Login() {
-const [data, setData] = useState({
+  const [data, setData] = useState({
     username: "",
     password: "",
 });
@@ -13,7 +13,6 @@ const [data, setData] = useState({
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      console.log("api called")
       const url = "http://localhost:5000/login";
       const res = await axios.post(url, data);
       console.log(res)
