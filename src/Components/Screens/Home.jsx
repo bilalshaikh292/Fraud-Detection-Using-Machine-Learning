@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "lottie-react";
-import scam from "../../assets/Lottie/scam.json";
+import scam from "../../assets/Lottie/anim.json";
 import Typewriter from "typewriter-effect";
 
 export default function Home() {
@@ -11,26 +11,33 @@ export default function Home() {
           <Navbar />
         </div>
         <div className="h-full w-full flex justify-center items-end bg-home bg-no-repeat bg-cover bg-end shadow-md m:bg-center bg-fixed">
-          <img className="p-12" src="/arrow.png" alt="" />
+          <img className="p-12 opacity-35" src="/arrow.png" alt="" />
         </div>
       </div>
 
       <div className="h-screen w-full bg-[#120E05] flex flex-col justify-center items-center space-y-8 text-center">
-        <div className="text-6xl w-full text-white opacity-45 tracking-wider">
-          {/* Welcome to Our Fraud Detection <br /> System Protocol */}
+        <div className="flex flex-col justify-center items-center text-6xl w-full text-white opacity-45 tracking-wider">
+          {/* Welcome to Our Fraud Detection <br /> System Prototype */}
+
+          <div style={{ width: 300, height: 300 }}>
+      <Lottie
+        animationData={scam}
+        loop
+        autoplay
+      />
+    </div>
 
           <Typewriter
             options={{
-              strings: ["Welcome to Our Fraud Detection"],
+              strings: ["Welcome to Our Fraud Detection <br> System Prototype"],
               autoStart: true,
               loop: true,
             }}
-            
           />
         </div>
       </div>
-      <div className="h-screen w-full bg-[#120E05] flex justify-center items-center text-center">
-        <div className="text-6xl w-[80%] text-white opacity-45 tracking-wider">
+      <div className="h-screen w-full bg-[#fff5e9]  flex justify-center items-center text-center">
+        <div className="text-6xl w-[80%] text-[#120E05]  tracking-wider">
           We're a group of passionate individuals working hard to keep your
           financial transactions safe. Using simple yet effective technology, we
           monitor every transaction in real-time to catch any suspicious
