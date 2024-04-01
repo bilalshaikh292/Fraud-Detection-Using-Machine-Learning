@@ -30,7 +30,7 @@ export default function Login() {
   return (
     <>
       <div className="py-6 px-8 font-Onest lg:flex lg:flex-row-reverse md:p-20 lg:p-0 ">
-        <div className="h-32 w-32 bg-pattern bg-no-repeat bg-cover bg-top-right lg:bg-center shadow-md m:bg-center bg-fixed lg:h-screen lg:w-1/2"></div>
+        <div className="h-32 w-32 bg-pattern bg-no-repeat bg-contain md:bg-cover bg-bottom-right lg:bg-center shadow-md m:bg-center bg-fixed lg:h-screen lg:w-1/2"></div>
         <div className="lg:w-1/2 lg:p-32">
           <form onSubmit={handleSubmit}>
           <h1 className="text-4xl mt-14 mb-8 font-semibold">Welcome back</h1>
