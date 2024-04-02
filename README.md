@@ -32,11 +32,16 @@ npm run dev
 **2nd Terminal:**
 ```
 cd backend
+npm install
 npm start
 ```
 **3rd Terminal:**
 ```
 cd backend/ML
+pip install uvicorn pip install uvicorn[standard]
+pip install fast api
+pip install joblib
+pip install scikit-learn
 uvicorn app:app --reload
 ```
 
