@@ -173,7 +173,7 @@ export default function Dashboard() {
               alt=""
               srcSet=""
             />
-            <h3 className="text-xl text-gray-700 font-semibold">Nilesh Gawli</h3>
+            <h3 className="text-xl text-gray-700 font-semibold">Bilal Shaikh</h3>
           </div>
         </div>
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 import Lottie from "lottie-react";
 import scam from "../../assets/Lottie/anim.json";
 import Typewriter from "typewriter-effect";
@@ -49,7 +49,7 @@ export default function Home() {
         </div>
       </div>
       <div className="h-screen w-full bg-[#fff5e9] opacity-80 flex justify-center items-center text-center font-Onest">
-        <div className="text-6xl w-[80%] text-[#120E05]  tracking-wider">
+        <div className="text-4xl w-[80%] text-[#120E05]  tracking-wider">
           We're a group of passionate individuals working hard to keep your
           financial transactions safe. Using simple yet effective technology, we
           monitor every transaction in real-time to catch any suspicious
